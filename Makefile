@@ -39,3 +39,12 @@ clean:
 	rm -f $(OBJ_DIR)/*
 	rm -f $(BIN_DIR)/*
 	rm -f $(DOC_DIR)/*
+
+# Regras auxiliares
+help:
+	@echo "make: compila e gera o executável"
+	@echo "make run: executa o programa"
+	@echo "make doc: gera a documentação do programa"
+	@echo "make test: executa o programa com o arquivo de teste"
+	@echo "make clean: remove os arquivos objeto e o executável"
+	@echo "make help: exibe esta mensagem"
