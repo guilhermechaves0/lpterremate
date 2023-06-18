@@ -1,4 +1,5 @@
 #include "task.hpp"
+#include <iostream>
 
 // Task
 // constructor and destructor
@@ -54,6 +55,17 @@ void Task::setDescription(std::string description)
     this->description = description;
 }
 
+// methods
+void Task::print()
+{
+    std::cout << "Task #" << this->id << std::endl;
+    std::cout << "Priority: " << this->priority << std::endl;
+    std::cout << "Status: " << this->status << std::endl;
+    std::cout << "Name: " << this->name << std::endl;
+    std::cout << "Description: " << this->description << std::endl;
+}
+
+
 // BugTask
 // constructor and destructor
 BugTask::BugTask(int id, int priority, bool status, std::string name, std::string description, std::string severity) : Task(id, priority, status, name, description)
@@ -66,4 +78,8 @@ BugTask::~BugTask() {}
 std::string BugTask::getSeverity()
 {
     return this->severity;
+}
+void BugTask::setSeverity(std::string severity)
+{
+    this->severity = severity;
 }

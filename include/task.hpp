@@ -28,6 +28,9 @@ class Task
         void setName(std::string name);
         std::string getDescription();
         void setDescription(std::string description);
+
+        // methods
+        void print();
 };
 
 class BugTask : public Task
