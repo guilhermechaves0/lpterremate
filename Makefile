@@ -38,7 +38,7 @@ test: $(TARGET)
 clean:
 	rm -f $(OBJ_DIR)/*
 	rm -f $(BIN_DIR)/*
-	rm -rf $(DOC_DIR)/*
+	rm -f $(DOC_DIR)/*
 
 # Regras auxiliares
 help:
