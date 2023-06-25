@@ -1,6 +1,6 @@
 # Criado por Guilherme Chaves e Deyves Oliveira em 17/06/2023
 CC = g++
-CFLAGS = -Wall -ansi -pedantic -fsanitize=address -O0 -g
+CFLAGS = -Wall -ansi -pedantic -std=c++11 -fsanitize=address -O0 -g
 
 # Variáveis
 INC_DIR = include

@@ -33,9 +33,11 @@ O projeto tem como objetivo fomentar o conhecimento através da discursão do te
 Para compilar o programa, basta executar os seguintes comandos no terminal:
 
 ```bash
-$ make mkdir # Cria diretórios necessários para o funcionamento do programa
 $ make # Compila o programa
 $ make run # Executa o programa
+$ make doc # Gera a documentação do programa
+$ make test # Executa os testes do programa
+$ make clean # Limpa os arquivos objetos do programa
 ```
 
 Em caso de duvidas, basta executar o comando `make help` para ver os comandos disponíveis.
